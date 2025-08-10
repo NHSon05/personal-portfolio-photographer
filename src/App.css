@@ -1,0 +1,36 @@
+@import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap'); */
+:root{
+  --main-color-1: #351A15;
+  --main-color-2: #F1ECE4;
+
+  --title-font-1: "Abril Fatface", serif;
+}
+#root {
+  width: 100%;
+  height: auto;
+}
+/* Information */
+.text-Section-1 {
+  @apply 
+    text-[var(--main-color-1)];
+}
+h1 .text-Section-1{
+  @apply text-4xl;
+}
+
+
+/* Section 2 */
+.text-Section-2{
+  @apply 
+    text-[var(--main-color-2)]
+}
+.line{
+  width: 50px;               /* Chiều dài line */
+  height: 2px;               /* Độ dày line */
+  background-color: white;   /* Màu line */
+  margin: 10px auto 0;       /* Căn giữa và cách chữ */
+}
+.font-heading-sec {
+  font-family: var(--title-font-1);
+}
