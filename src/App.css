@@ -34,3 +34,29 @@ h1 .text-Section-1{
 .font-heading-sec {
   font-family: var(--title-font-1);
 }
+
+/* Heading Title CSS */
+.title-white{
+  @apply text-4xl text-[var(--main-color-2)];
+  font-family: var(--title-font-1);
+}
+.title-line-white{
+  @apply w-[80px] h-[2px] bg-white m-auto mt-2;
+}
+
+.title-brown{
+  @apply text-4xl text-[var(--main-color-1)];
+  font-family: var(--title-font-1);
+}
+.title-line-brown{
+  @apply w-[80px] h-[2px] m-auto mt-2 bg-(--main-color-1);
+}
+
+@layer utilities {
+  @keyframes spin-slow {
+    to { transform: rotate(360deg); }
+  }
+  .animate-spin-slow {
+    animation: spin-slow 6s linear infinite;
+  }
+}
