@@ -18,18 +18,10 @@
 h1 .text-Section-1{
   @apply text-4xl;
 }
-
-
 /* Section 2 */
 .text-Section-2{
   @apply 
     text-[var(--main-color-2)]
-}
-.line{
-  width: 50px;               /* Chiều dài line */
-  height: 2px;               /* Độ dày line */
-  background-color: white;   /* Màu line */
-  margin: 10px auto 0;       /* Căn giữa và cách chữ */
 }
 .font-heading-sec {
   font-family: var(--title-font-1);
@@ -51,7 +43,8 @@ h1 .text-Section-1{
 .title-line-brown{
   @apply w-[80px] h-[2px] m-auto mt-2 bg-(--main-color-1);
 }
-
+/* ------------------------------------------------------ */
+/* Avatar CSS */
 @layer utilities {
   @keyframes spin-slow {
     to { transform: rotate(360deg); }
@@ -59,4 +52,19 @@ h1 .text-Section-1{
   .animate-spin-slow {
     animation: spin-slow 6s linear infinite;
   }
+}
+
+/* 
+  border-2 border-(--main-color-2) bg-(--main-color-1)
+  hover:bg-(--main-color-2) hover:text-(--main-color-1)
+  hover:border-2 hover:border-(--main-color-1) */
+
+/* Button CSS */
+.color-button{
+  @apply text-center
+  bg-linear-to-bl from-violet-500 to-fuchsia-500 rounded-l;
+}
+.transparent-button {
+  @apply text-center
+  border-2 rounded-l;
 }

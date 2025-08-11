@@ -1,38 +1,6 @@
 import './App.css'
-
-// Icon Compoment
-function SocialMedia({iconName,bgColor,linkMedia}){
-    return (
-        <li className={`w-10 h-10 rounded-full flex items-center justify-center ${bgColor}`}>
-            <a href={linkMedia}>
-                <i className={`${iconName} text-xl text-white`}></i>
-            </a>
-        </li>
-    )
-}
-
-// Button Component
-function Button({buttonText}) {
-    return (
-        <button className=" border-2 border-(--main-color-2) bg-(--main-color-1)
-                            hover:bg-(--main-color-2) hover:text-(--main-color-1)
-                            hover:border-2 hover:border-(--main-color-1)">
-        <p className=''>{buttonText}</p>
-        </button>
-    )
-}
-
-// Heading component
-function HeadingTitle({textTitle,cssHeading,cssLine}){
-    return (
-        <div>
-            <h1 className={cssHeading}>
-                {textTitle}
-            </h1>
-            <div className={cssLine}></div>
-        </div>
-    )
-}
+import Taskbar from './Taskbar.jsx'
+import { HeadingTitle, Button, SocialMedia } from './Component.jsx'
 
 // Services Item
 
@@ -41,9 +9,11 @@ function Section() {
   return (
     // container
     <div>
+        {/* Taskbar */}
+        <Taskbar/>
         {/* Start */}
         <div className='grid grid-cols-2 relative
-                        bg-[url(/DaNangCity.jpg)] bg-center bg-cover px-24 py-40'>
+                        bg-[url(/DaNangCity.jpg)] bg-center bg-cover px-24 py-20'>
             {/* Black layer */}
             <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
             {/* Text */}
@@ -81,6 +51,16 @@ function Section() {
                         linkMedia="https://www.behance.net/sonnguyen05"
                     />
                 </ul>
+                <div className='space-x-6'>
+                    <Button
+                        buttonText="Hire me"
+                        cssButton="color-button"
+                    />
+                    <Button
+                        buttonText="View my works"
+                        cssButton="transparent-button"
+                    />
+                </div>
             </div>
             {/* Avatar */}
             <div className='relative z-10 w-100 h-100 m-auto rounded-full overflow-hidden'>
@@ -89,20 +69,20 @@ function Section() {
                             border-8 border-transparent border-t-cyan-400 border-dashed animate-spin-slow">
                 </span> */}
                 <svg class="absolute inset-0 animate-spin-slow" viewBox="0 0 200 200">
-                <defs>
-                    <linearGradient id="gradBorder" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" stop-color="#8b5cf6" /> 
-                        <stop offset="100%" stop-color="#d946ef" />
-                    </linearGradient>
-                </defs>
-                <circle cx="100" cy="100" r="98"
-                        fill="none"
-                        stroke="url(#gradBorder)"       
-                        stroke-width="4"
-                        stroke-dasharray="60 10"
-                        stroke-linecap="round"
-                />
-  </svg>
+                    <defs>
+                        <linearGradient id="gradBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#8b5cf6" /> 
+                            <stop offset="100%" stop-color="#d946ef" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="100" cy="100" r="98"
+                            fill="none"
+                            stroke="url(#gradBorder)"       
+                            stroke-width="4"
+                            stroke-dasharray="60 10"
+                            stroke-linecap="round"
+                    />
+                </svg>
             </div>
         </div>
 
