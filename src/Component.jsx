@@ -26,7 +26,9 @@ export const HeadingTitle = ({textTitle,cssHeading,cssLine}) => {
 // Button Components
 export const Button = ({buttonText,cssButton}) => {
     return (
-        <button className={cssButton}>
+        <button className={`transition-transform duration-1000 ease-in-out hover:scale-105
+                            rounded-xl text-center text-Content
+                            ${cssButton}`}>
         <p className=''>{buttonText}</p>
         </button>
     )    

@@ -10,26 +10,29 @@ function Section() {
     // container
     <div>
         {/* Taskbar */}
-        <Taskbar/>
+        <div className='bg-[#003E59] opacity-100'>
+            <Taskbar/>
+        </div>
         {/* Start */}
-        <div className='grid grid-cols-2 relative
-                        bg-[url(/DaNangCity.jpg)] bg-center bg-cover px-24 py-20'>
+        <div className='relative bg-[url(/DaNangCity.jpg)] bg-center bg-cover py-20'>
             {/* Black layer */}
             <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
-            {/* Text */}
-            <div className="relative z-10 py-24 space-y-4 m-auto font-heading-sec text-Section-2">
-                <div className='text-center w-[20em]
+            {/* Container */}
+            <div className='container grid grid-cols-2'>
+                {/* Text */}
+                <div className="relative z-10 py-24 space-y-4 font-heading-sec text-Section-2">
+                    <div className='text-center w-[20em]
                                 bg-linear-to-bl from-violet-500 to-fuchsia-500 rounded-l'>
-                    <p className='text-2xl py-2'>Welcome to my Portfolio</p>
-                </div>
-                <h1 className='text-6xl'>
-                    Hi! I'm Son Nguyen <br/>
-                        <span className='   bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text 
+                        <p className='text-2xl py-2 text-Content'>Welcome to my Portfolio</p>
+                    </div>
+                    <h1 className='text-6xl'>
+                        Hi! I'm Son Nguyen <br/>
+                            <span className='   bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text 
                                             text-transparent text-4xl font-bold'>
-                            Freelance Photographer
-                        </span>
-                </h1>
-                <ul className='space-x-2 flex'>
+                                Freelance Photographer
+                            </span>
+                    </h1>
+                    <ul className='space-x-2 flex'>
                     <SocialMedia
                         iconName="fa-brands fa-facebook-f"
                         bgColor="bg-blue-500"
@@ -50,46 +53,43 @@ function Section() {
                         bgColor="bg-black"
                         linkMedia="https://www.behance.net/sonnguyen05"
                     />
-                </ul>
-                <div className='space-x-6'>
-                    <Button
-                        buttonText="Hire me"
-                        cssButton="color-button"
-                    />
-                    <Button
-                        buttonText="View my works"
-                        cssButton="transparent-button"
-                    />
+                    </ul>
+                    <div className='space-x-6'>
+                        <Button
+                            buttonText="Hire me"
+                            cssButton="color-button"
+                        />
+                        <Button
+                            buttonText="View my works"
+                            cssButton="transparent-button"
+                        />
+                    </div>
                 </div>
-            </div>
             {/* Avatar */}
-            <div className='relative z-10 w-100 h-100 m-auto rounded-full overflow-hidden'>
-                <img src='/avatar.JPG ' className='w-full h-full object-cover'/>
-                {/* <span class="absolute inset-0 rounded-full 
-                            border-8 border-transparent border-t-cyan-400 border-dashed animate-spin-slow">
-                </span> */}
-                <svg class="absolute inset-0 animate-spin-slow" viewBox="0 0 200 200">
-                    <defs>
-                        <linearGradient id="gradBorder" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" stop-color="#8b5cf6" /> 
-                            <stop offset="100%" stop-color="#d946ef" />
-                        </linearGradient>
-                    </defs>
-                    <circle cx="100" cy="100" r="98"
-                            fill="none"
-                            stroke="url(#gradBorder)"       
-                            stroke-width="4"
-                            stroke-dasharray="60 10"
-                            stroke-linecap="round"
-                    />
-                </svg>
+                <div className='relative z-10 w-100 h-100 m-auto rounded-full overflow-hidden'>
+                    <img src='/avatar.JPG ' className='w-full h-full object-cover'/>
+                    <svg class="absolute inset-0 animate-spin-slow" viewBox="0 0 200 200">
+                        <defs>
+                            <linearGradient id="gradBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#8b5cf6" /> 
+                                <stop offset="100%" stop-color="#d946ef" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="100" cy="100" r="98"
+                                fill="none"
+                                stroke="url(#gradBorder)"       
+                                stroke-width="4"
+                                stroke-dasharray="60 10"
+                                stroke-linecap="round"
+                        />
+                    </svg>
+                </div>
             </div>
         </div>
 
-
         {/* Personal Information */}
         <div className='grid grid-cols-2 
-                        bg-(--main-color-2) px-24'>
+                        bg-[#111827] px-24'>
             {/* Image */}
             <div className='flex justify-center'>
                 <img src='/3__151_-removebg-preview.png' alt='Son picture'></img>

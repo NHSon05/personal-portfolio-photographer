@@ -1,10 +1,14 @@
 @import "tailwindcss";
+@import 'animate.css';
+
+
 /* @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap'); */
 :root{
   --main-color-1: #351A15;
   --main-color-2: #F1ECE4;
 
   --title-font-1: "Abril Fatface", serif;
+  --title-font-2: "PT Sans", sans-serif;
 }
 #root {
   width: 100%;
@@ -14,6 +18,9 @@
 .text-Section-1 {
   @apply 
     text-[var(--main-color-1)];
+}
+.text-Content {
+  font-family: var(--title-font-2);
 }
 h1 .text-Section-1{
   @apply text-4xl;
@@ -61,10 +68,11 @@ h1 .text-Section-1{
 
 /* Button CSS */
 .color-button{
-  @apply text-center
-  bg-linear-to-bl from-violet-500 to-fuchsia-500 rounded-l;
+  @apply
+  bg-linear-to-bl from-violet-500 to-fuchsia-500;
 }
 .transparent-button {
-  @apply text-center
-  border-2 rounded-l;
+  @apply
+  border-2
+  hover:shadow-lg hover:border-fuchsia-500 hover:text-fuchsia-400;
 }
