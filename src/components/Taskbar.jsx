@@ -1,4 +1,4 @@
-import './App.css'
+import '../App.css'
 
 function ListTaskbar({text,link}){
     return(
@@ -10,14 +10,15 @@ function ListTaskbar({text,link}){
 
 function Taskbar(){
     return(
+        <div className='bg-[#003E59] opacity-100 fixed top-0 left-0 w-full z-50'>
             <div className='container'>
             {/* <div className=" inset-0 bg-white z-1 max-w-full max-h-15"></div> */}
-                <div className='items-center flex justify-between z-50 py-4'>
+                <div className='items-center flex justify-between z-50 py-2'>
                     <ul className='z-1'>
                         <li>
                             <a href='#'>
                                 <span className='bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text font-heading-sec
-                                                text-transparent text-4xl font-bold'>
+                                                text-transparent text-3xl font-bold'>
                                     Son Nguyen Foto
                                 </span>
                             </a>
@@ -33,6 +34,7 @@ function Taskbar(){
                     </ul>
                 </div>
             </div>
+        </div>
     )
 }
 

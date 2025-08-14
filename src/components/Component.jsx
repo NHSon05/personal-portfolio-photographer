@@ -1,4 +1,4 @@
-import './App.css'
+import '../App.css'
 
 // Social Media Components
 export const SocialMedia = ({iconName,bgColor,linkMedia}) => {
@@ -27,7 +27,7 @@ export const HeadingTitle = ({textTitle,cssHeading,cssLine}) => {
 export const Button = ({buttonText,cssButton}) => {
     return (
         <button className={`transition-transform duration-1000 ease-in-out hover:scale-105
-                            rounded-xl text-center text-Content
+                            rounded-xl text-center text-Content relative
                             ${cssButton}`}>
         <p className=''>{buttonText}</p>
         </button>
