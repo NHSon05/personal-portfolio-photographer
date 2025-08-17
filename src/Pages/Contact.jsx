@@ -21,7 +21,7 @@ function ContactTitle({titleContact, titleDes,classTitle,classDesc}){
     return (
         <>
             <h1 className={`text-Content bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text 
-                            text-transparent text-4xl font-medium text-Content ${classTitle}` }>
+                            text-transparent text-2xl font-medium text-Content ${classTitle}` }>
                 {titleContact}
             </h1>
             <p className={`text-Content ${classDesc}` }>
@@ -67,14 +67,14 @@ function Contact(){
             />
             <div className='grid grid-cols-5 container'>
                 {/* Contact Information */}
-                <div className='col-span-3'>
+                <div className='col-span-3 mr-24'>
                     <ContactTitle
                         titleContact='Contact Information'
                         titleDes='Thank you for visiting our website. We are here to assist you with any inquiries you may have.'
                         classTitle='text-8xl'
                         classDesc='text-xl mr-32'
                     />
-                    <div className='grid grid-cols-2 mr-24 space-x-2'>
+                    <div className='grid grid-cols-2 space-x-2'>
                         <WorkInfo
                             icon='fa-solid fa-clock'
                             bg='bg-pink-500'
