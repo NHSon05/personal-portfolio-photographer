@@ -138,13 +138,13 @@ function Contact(){
                             name='email'
                         />
                     </div>
-                    <div class="w-full max-w-xl">
-                        <label for="message" className="block text-xl font-bold mb-2 text-Content">Message</label>
+                    <div className="w-full max-w-xl">
+                        <label htmlFor="message" className="block text-xl font-bold mb-2 text-Content">Message</label>
                             <textarea
                                 id="message"
                                 name="message"
                                 rows="5"
-                                class="text-Content w-full px-4 py-4 text-l border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 bg-gray-800 text-white placeholder-gray-400"
+                                className="text-Content w-full px-4 py-4 text-l border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 bg-gray-800 text-white placeholder-gray-400"
                                 placeholder="Enter your message here..."
                             ></textarea>
                     </div>

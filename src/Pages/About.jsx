@@ -26,9 +26,6 @@ function About(){
                     Let's tell your story through photography.
                 </p>
             </div>
-            <Button
-                buttonText="View my works">
-            </Button>
         </div>
     )
 }

@@ -24,11 +24,20 @@ export const HeadingTitle = ({textTitle,cssHeading,cssLine}) => {
 }
 
 // Button Components
-export const Button = ({buttonText,cssButton}) => {
+export const Button = ({buttonText,cssButton,onclick}) => {
+
+    const clickScroll = () => {
+        window.scrollTo({
+            top:200,
+            left: 0,
+            behavior:'smooth'
+        })
+    }
     return (
         <button className={`transition-transform duration-1000 ease-in-out hover:scale-105
                             rounded-xl text-center text-Content relative
-                            ${cssButton}`}>
+                            ${cssButton}`}
+                onClick={onclick}>
         <p className=''>{buttonText}</p>
         </button>
     )    

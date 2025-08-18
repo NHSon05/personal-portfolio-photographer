@@ -3,6 +3,7 @@ import { HeadingTitle, Button, SocialMedia } from '../components/Component.jsx'
 import Glowing from '../components/Glowing.jsx'
 
 function WelcomeScreen() {
+
     return (
         <div className='relative bg-[url(/DaNangCity.jpg)]
                         bg-center bg-cover py-20 pt-36'>
@@ -54,9 +55,19 @@ function WelcomeScreen() {
                             <Button
                                 buttonText="Hire me"
                                 cssButton="color-button"
+                                onclick={() => window.scrollTo({
+                                                    top:4000,
+                                                    left: 0,
+                                                    behavior:'smooth'
+                                                })}
                             />
                             <Button
                                 buttonText="View my works"
+                                onclick={() => window.scrollTo({
+                                                    top:1100,
+                                                    left: 0,
+                                                    behavior:'smooth'
+                                                })}
                                 cssButton="transparent-button"
                             />
                         </div>
@@ -64,19 +75,19 @@ function WelcomeScreen() {
                 {/* Avatar */}
                 <div className='relative z-10 w-100 h-100 my-auto rounded-full overflow-hidden justify-self-end'>
                     <img src='/avatar.JPG ' className='w-full h-full object-cover'/>
-                    <svg class="absolute inset-0 animate-spin-slow" viewBox="0 0 200 200">
+                    <svg className="absolute inset-0 animate-spin-slow" viewBox="0 0 200 200">
                         <defs>
                             <linearGradient id="gradBorder" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" stop-color="#8b5cf6" /> 
-                                <stop offset="100%" stop-color="#d946ef" />
+                                <stop offset="0%" stopColor="#8b5cf6" /> 
+                                <stop offset="100%" stopColor="#d946ef" />
                             </linearGradient>
                         </defs>
                         <circle cx="100" cy="100" r="98"
                                 fill="none"
                                 stroke="url(#gradBorder)"       
-                                stroke-width="4"
-                                stroke-dasharray="60 10"
-                                stroke-linecap="round"
+                                strokeWidth="4"
+                                strokeDasharray="60 10"
+                                strokeLinecap="round"
                         />
                     </svg>
                 </div>
