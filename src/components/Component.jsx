@@ -15,7 +15,8 @@ export const SocialMedia = ({iconName,bgColor,linkMedia}) => {
 export const HeadingTitle = ({textTitle,cssHeading,cssLine}) => {
     return (
         <div>
-            <h1 className={cssHeading}>
+            <h1 className={`${cssHeading} bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text 
+                                                text-transparent font-bold`}>
                 {textTitle}
             </h1>
             <div className={cssLine}></div>
@@ -26,13 +27,7 @@ export const HeadingTitle = ({textTitle,cssHeading,cssLine}) => {
 // Button Components
 export const Button = ({buttonText,cssButton,onclick}) => {
 
-    const clickScroll = () => {
-        window.scrollTo({
-            top:200,
-            left: 0,
-            behavior:'smooth'
-        })
-    }
+
     return (
         <button className={`transition-transform duration-1000 ease-in-out hover:scale-105
                             rounded-xl text-center text-Content relative

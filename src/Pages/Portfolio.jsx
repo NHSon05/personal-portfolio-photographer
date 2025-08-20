@@ -55,7 +55,7 @@ function Portfolio(){
     }
 
     return (
-        <div className=' bg-[#111827]
+        <div id='portfolio' className=' bg-[#111827]
                         px-8 py-16 text-center space-y-16'>
             <HeadingTitle
                 textTitle="Portfolio"

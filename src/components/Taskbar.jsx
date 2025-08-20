@@ -1,9 +1,14 @@
 import '../App.css'
+import WelcomeScreen from '../Pages/WelcomeScreen'
 
-function ListTaskbar({text,link}){
+function ListTaskbar({text,link,listIndex}){
     return(
         <a className='cursor-pointer' href={link}>
-        <li className='hover:text-blue-500 text-Content font-bold text-white'>{text}</li>
+        <li className='hover:text-blue-500 text-Content font-bold text-white'
+                        onClick={() => {document.getElementById(`${listIndex}`).scrollIntoView({behavior: 'smooth'});}}
+        >
+                {text}
+        </li>
     </a>
     )
 }
@@ -14,9 +19,11 @@ function Taskbar(){
             <div className='container'>
             {/* <div className=" inset-0 bg-white z-1 max-w-full max-h-15"></div> */}
                 <div className='items-center flex justify-between z-50 py-2'>
-                    <ul className='z-1'>
-                        <li>
-                            <a href='#'>
+                    <ul className='z-1 cursor-pointer'>
+                        <li onClick={() => {
+                                document.getElementById('welcomeScreen').scrollIntoView({behavior: 'smooth'});
+                            }}>
+                            <a>
                                 <span className='bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text font-heading-sec
                                                 text-transparent text-3xl font-bold'>
                                     Son Nguyen Foto
@@ -25,12 +32,12 @@ function Taskbar(){
                         </li>
                     </ul>
                     <ul className='inline-flex space-x-8 z-1 text-xl font-bold'>
-                        <ListTaskbar text="Home"/>
-                        <ListTaskbar text="About me"/>
-                        <ListTaskbar text="Portfolio"/>
-                        <ListTaskbar text="Services"/>
+                        <ListTaskbar text="Home" listIndex='welcomeScreen'/>
+                        <ListTaskbar text="About me" listIndex='about'/>
+                        <ListTaskbar text="Portfolio" listIndex='portfolio'/>
+                        <ListTaskbar text="Services" listIndex='services'/>
                         <ListTaskbar text="Feedback"/>
-                        <ListTaskbar text="Contact"/>
+                        <ListTaskbar text="Contact" listIndex='contact'/>
                     </ul>
                 </div>
             </div>

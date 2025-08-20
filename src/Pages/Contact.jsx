@@ -53,7 +53,7 @@ function WorkInfo({workingTitle,workDesc,icon,bg}){
 
 function Contact(){
     return(
-        <div className='bg-[#111827]
+        <div id='contact' className='bg-[#111827]
                         px-24 py-16 m-auto space-y-16'>
             <Glowing/>
             <Glowing/>
@@ -151,6 +151,7 @@ function Contact(){
                     <Button
                         buttonText='Submit'
                         cssButton='color-button'
+                        onclick={() => {alert('Đặt hàng thành công')}}
                     />
                 </div>
             </div>

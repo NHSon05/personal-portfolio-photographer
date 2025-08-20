@@ -4,7 +4,8 @@ import { HeadingTitle, Button } from '../components/Component'
 function Card({cardTitle,cardDes,cardImg}){
     return (
         <>
-            <div className='bg-gray-900 w-full h-auto relative py-4 px-8 space-y-4 rounded-xl '>
+            <div className='bg-gray-900 w-full h-auto relative py-4 px-8 space-y-4 rounded-xl
+                            animate__animated animate__bounce animate__delay-2s'>
                 <h1 className='text-center text-Content bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text 
                                 text-transparent text-2xl font-medium'>
                     {cardTitle}
@@ -22,7 +23,7 @@ function Card({cardTitle,cardDes,cardImg}){
 
 function Services() {
     return (
-        <div className='bg-[#111827]
+        <div id='services' className='bg-[#111827]
                        px-24 py-16 m-auto space-y-16'>
             <HeadingTitle
                 textTitle="Services"

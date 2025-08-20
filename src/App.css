@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import 'animate.css';
 
-
 /* @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap'); */
 :root{
   --main-color-1: #351A15;
@@ -36,11 +35,11 @@ h1 .text-Section-1{
 
 /* Heading Title CSS */
 .title-white{
-  @apply text-4xl text-[var(--main-color-2)];
+  @apply text-4xl;
   font-family: var(--title-font-1);
 }
 .title-line-white{
-  @apply w-[80px] h-[2px] bg-white m-auto mt-2;
+  @apply w-[80px] h-[2px] bg-gradient-to-bl from-violet-500 to-fuchsia-500 m-auto mt-2;
 }
 
 .title-brown{

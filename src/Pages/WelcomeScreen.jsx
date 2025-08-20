@@ -1,11 +1,14 @@
 import '../App.css'
 import { HeadingTitle, Button, SocialMedia } from '../components/Component.jsx'
 import Glowing from '../components/Glowing.jsx'
+import About from './About.jsx'
+import Portfolio from './Portfolio.jsx'
+import Contact from './Contact.jsx'
 
 function WelcomeScreen() {
 
     return (
-        <div className='relative bg-[url(/DaNangCity.jpg)]
+        <div id='welcomeScreen' className='relative bg-[url(/DaNangCity.jpg)]
                         bg-center bg-cover py-20 pt-36'>
             <Glowing/>
             <Glowing/>
@@ -55,19 +58,15 @@ function WelcomeScreen() {
                             <Button
                                 buttonText="Hire me"
                                 cssButton="color-button"
-                                onclick={() => window.scrollTo({
-                                                    top:4000,
-                                                    left: 0,
-                                                    behavior:'smooth'
-                                                })}
+                                onclick={() => {
+                                    document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+                                }}
                             />
                             <Button
                                 buttonText="View my works"
-                                onclick={() => window.scrollTo({
-                                                    top:1100,
-                                                    left: 0,
-                                                    behavior:'smooth'
-                                                })}
+                                onclick={() => {
+                                    document.getElementById('about').scrollIntoView({behavior: 'smooth'});
+                                }}
                                 cssButton="transparent-button"
                             />
                         </div>
