@@ -33,52 +33,52 @@ function Services() {
             <div className='grid grid-cols-4 gap-4 container'>
                 <Card
                     cardTitle='Portrait'
-                    cardImg='/public/Portrait.JPG'
+                    cardImg='/Portrait.JPG'
                     cardDes='Capture your persionality with professional and expressive portrait photography.'
                 />
                 <Card
                     cardTitle='Fashion'
-                    cardImg='/public/Fashion.JPG'
+                    cardImg='/Fashion.JPG'
                     cardDes='Bring your brand story to life with creative visuals and storytelling images.'
                 />
                 <Card
                     cardTitle='Graduation'
-                    cardImg='/public/Gra.JPG'
+                    cardImg='/Gra.JPG'
                     cardDes='Capture your persionality with professional and expressive portrait photography.'
                 />
                 <Card
                     cardTitle='Military'
-                    cardImg='/public/Military.JPG'
+                    cardImg='/Military.JPG'
                     cardDes='Capture your persionality with professional and expressive portrait photography.'
                 />
                 <Card
                     cardTitle='Event'
-                    cardImg='/public/Event.JPG'
+                    cardImg='/Event.JPG'
                     cardDes='From parties to corporate events, I capture the energy and key moments seamlessly.'
                 />
                 <Card
                     cardTitle='Travel'
-                    cardImg='/public/Travel.JPEG'
+                    cardImg='/Travel.JPEG'
                     cardDes='Authentic travel experiences captured from around the world for editorial or personal use.'
                 />
                 <Card
                     cardTitle='Couple'
-                    cardImg='/public/Couple.JPG'
+                    cardImg='/Couple.JPG'
                     cardDes='Capture your persionality with professional and expressive portrait photography.'
                 />
                 <Card
                     cardTitle='Ao Dai'
-                    cardImg='/public/AoDai.JPG'
+                    cardImg='/AoDai.JPG'
                     cardDes='Capture your persionality with professional and expressive portrait photography.'
                 />
                 <Card
                     cardTitle='Yearbook'
-                    cardImg='/public/Yearbook.JPG'
+                    cardImg='/Yearbook.JPG'
                     cardDes='Capture your persionality with professional and expressive portrait photography.'
                 />
                 <Card
                     cardTitle='Lanscape'
-                    cardImg='/public/Lanscape.JPG'
+                    cardImg='/Lanscape.JPG'
                     cardDes='Capture your persionality with professional and expressive portrait photography.'
                 />
             </div>
