@@ -3,77 +3,77 @@
         {
             "id" : 1,
             "title" : "Portrait",
-            "url" : "/public/Portrait.JPG"
+            "url" : "/Portrait.JPG"
         },
         {
             "id" : 2,
             "title" : "Military",
-            "url" : "/public/Military.JPG"
+            "url" : "/Military.JPG"
         },
         {
             "id" : 3,
             "title" : "Couple",
-            "url" : "/public/Couple-2.JPEG"
+            "url" : "/Couple-2.JPEG"
         },
         {
             "id" : 4,
             "title" : "Travel",
-            "url" : "/public/Travel.JPEG"
+            "url" : "/Travel.JPEG"
         },
         {
             "id" : 5,
             "title" : "Graduation",
-            "url" : "/public/Gra-1.JPEG"
+            "url" : "/Gra-1.JPEG"
         },
         {
             "id" : 6,
             "title" : "Lanscape",
-            "url" : "/public/Lanscape.JPG"
+            "url" : "/Lanscape.JPG"
         },
         {
             "id" : 7,
             "title" : "Event",
-            "url" : "/public/Event.JPG"
+            "url" : "/Event.JPG"
         },
         {
             "id" : 8,
             "title" : "Fashion",
-            "url" : "/public/Fashion-3.JPG"
+            "url" : "/Fashion-3.JPG"
         },
         {
             "id" : 9,
             "title" : "Military",
-            "url" : "/public/Military-2.JPG"
+            "url" : "/Military-2.JPG"
         },
         {
             "id" : 10,
             "title" : "Event",
-            "url" : "/public/Event-1.JPG"
+            "url" : "/Event-1.JPG"
         },
         {
             "id" : 11,
             "title" : "Portrait",
-            "url" : "/public/Portrait-1.JPG"
+            "url" : "/Portrait-1.JPG"
         },
         {
             "id" : 12,
             "title": "Military",
-            "url" : "/public/Military-8.JPEG"
+            "url" : "/Military-8.JPEG"
         },
         {
             "id" : 13,
             "title" : "Fashion",
-            "url" : "/public/Fashion-1.JPG"
+            "url" : "/Fashion-1.JPG"
         },
         {
             "id" : 14,
             "title" : "Yearbook",
-            "url" : "/public/Gra-3.JPEG"
+            "url" : "/Gra-3.JPEG"
         },
         {
             "id" : 15,
             "title" : "Ao Dai",
-            "url" : "/public/AoDai.JPG"
+            "url" : "/AoDai.JPG"
         }
         
     ]
