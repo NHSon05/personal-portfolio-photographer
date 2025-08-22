@@ -27,7 +27,7 @@ function WelcomeScreen() {
                     </div>
                     <h1 className='text-6xl'>
                         Hi! I'm Son Nguyen <br/>
-                            <p className='   bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text 
+                            <p className='bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text 
                                                 text-transparent text-4xl font-bold'>
                                 Freelance Photographer
                             </p>
