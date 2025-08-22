@@ -76,19 +76,19 @@ function About(){
                     <h1 className=' text-2xl font-bold text-center p-4'>Tools used:</h1>
                     <div className='flex flex-wrap gap-8 justify-center p-4 items-center mx-auto'>
                         <div className='border-1 rounded-4xl w-48 h-48 flex flex-col justify-center items-center text-center'>
-                            <img src='public/Photoshop.png' className='w-1/2 h-auto mx-auto'></img>
+                            <img src='/tool/Photoshop.png' className='w-1/2 h-auto mx-auto'></img>
                             <p className='text-center font-bold'>Photoshop</p>
                         </div>
                         <div className='border-1 rounded-4xl w-48 h-48 flex flex-col justify-center items-center text-center'>
-                            <img src='public/Lighroom.png' className='w-1/2 h-auto mx-auto'></img>
+                            <img src='/tool/Lighroom.png' className='w-1/2 h-auto mx-auto'></img>
                             <p className='text-center font-bold'>Lighroom</p>
                         </div>
                         <div className='border-1 rounded-4xl w-48 h-48 flex flex-col justify-center items-center text-center'>
-                            <img src='public/Figma.png' className='w-1/2 h-auto mx-auto'></img>
+                            <img src='/tool/Figma.png' className='w-1/2 h-auto mx-auto'></img>
                             <p className='text-center font-bold'>Figma</p>
                         </div>
                         <div className='border-1 rounded-4xl w-48 h-48 flex flex-col justify-center items-center text-center'>
-                            <img src='public/AI.png' className='w-1/2 h-auto mx-auto'></img>
+                            <img src='/tool/AI.png' className='w-1/2 h-auto mx-auto'></img>
                             <p className='text-center font-bold'>AI</p>
                         </div>
                     </div>
